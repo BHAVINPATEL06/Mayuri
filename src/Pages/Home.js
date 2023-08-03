@@ -1,23 +1,28 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast'
 
 
 
 const Home = () => {
     return (
-
         <>
-        <div className='fw-medium text-center fs-2 my-2 fst-italic' style={{ color: 'white' }} >
+        <div className='fw-medium text-center fs-2  fst-italic' style={{ color: 'white',marginTop:'80px' }} >
             Hello!! VIT Students.
             <br /> Welcome to Mayuri
         </div>
         <div className="text-center fs-5 fst-italic" style={{ color: 'white' }}>
-            If you want to be free from your suffering, make up your mind. If you give up on your dream, you will suffer more. -Might Guy
+            <br />
+            <br />
+            <p>
+            THIS IS THE PLACE WHERE YOU CAN CHECK OUT THE MENU OF MAYURI FOODS WITHOUT BEING THE PART OF CROWD.  
+            </p>
+            <br />
+            <p style={{fontWeight:'bold'}}> FIND THE MENU WITHOUT WASTING TIME...</p>
+            
         </div>
+        
         <div className="button_1">
-            {/* <NavLink to='/menu'> */}
-                <button className='button-89 fw-medium '  onClick={() => toast.success("Menu on Top Bar..") }> Get Started</button>
+                <button className='button-89 fw-medium ' onClick={() => toast.success("Menu on Top Bar..") }> Get Started</button>
                 <Toaster
                             position="top-center"
                             toastOptions={{
@@ -34,7 +39,6 @@ const Home = () => {
                                 }
                             }}
                         />
-            {/* </NavLink> */}
         </div>
     </>
     )

@@ -7,7 +7,7 @@ import data from '../Components/Data'
 const TeaCoffee = () => {
   return (
     <>
-    <div style={{color: 'white',textAlign:'center',fontFamily:'cursive',fontSize:"40px",}}>Mayuri Foods Tea-Coffee</div>
+    <div style={{color: 'white',textAlign:'center',fontFamily:'cursive',fontSize:"40px", marginTop:'70px'}}>Mayuri Foods Tea-Coffee</div>
     <div className="row">
       {data.map((element)=> {
         return <div className="col-md-4">

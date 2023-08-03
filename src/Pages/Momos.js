@@ -6,7 +6,7 @@ import Component from '../Components/Component'
 const Momos = () => {
   return (
     <>
-        <div style={{color: 'white',textAlign:'center',fontFamily:'cursive',fontSize:"40px",}}>Mayuri Foods Momos</div>
+        <div style={{color: 'white',textAlign:'center',fontFamily:'cursive',fontSize:"40px", marginTop:'70px'}}>Mayuri Foods Momos</div>
     <div className="row">
       {data.map((element)=> {
         return <div className="col-md-4">

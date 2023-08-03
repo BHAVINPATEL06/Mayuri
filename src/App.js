@@ -1,5 +1,4 @@
-// import {useState} from 'react'
-import { Route, Routes,  } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import Home from "./Pages/Home.js"
 import TeaCoffee from "./Pages/TeaCoffee.js"
 import Chats from "./Pages/Chats.js"
@@ -11,18 +10,17 @@ import Lassi from "./Pages/Lassi.js"
 import OnMRPItem from "./Pages/OnMRPItem.js"
 import Sweet from "./Pages/Sweet.js"
 import Shake from "./Pages/Shake.js"
-import Cart from "./Pages/Cart.js"
 import './App.css';
 import Navbar from './Components/Navbar.js';
-import Footer from './Components/Footer.js';
+import AboutUs from './Pages/AboutUs.js';
 
+function App(props) {
 
-function App() {
   return (
     <>
       <Navbar  />
       <Routes>
-        <Route path='/' element={<Home></Home>} />
+        <Route path='/' key={props.id}  element={<Home></Home>} />
         <Route path='/chats' element={<Chats></Chats>} />
         <Route path='/tea'  element={<TeaCoffee  ></TeaCoffee>}/>
         <Route path='/south' element={<SouthInd></SouthInd>} />
@@ -33,9 +31,8 @@ function App() {
         <Route path='/mrp' element={<OnMRPItem></OnMRPItem>} />
         <Route path='/sweet' element={<Sweet></Sweet>} />
         <Route path='/shake' element={<Shake></Shake>} />
-        <Route path='/cart' element={<Cart></Cart>} />
+        <Route path='/about' element={<AboutUs></AboutUs>} />
       </Routes>
-      <Footer></Footer>
     </>
   );
 }

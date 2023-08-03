@@ -6,7 +6,7 @@ import data from '../Components/DataCombos'
 const Combos = () => {
   return (
     <>
-        <div style={{color: 'white',textAlign:'center',fontFamily:'cursive',fontSize:"40px",}}>Mayuri Foods Combos</div>
+        <div style={{color: 'white',textAlign:'center',fontFamily:'cursive',fontSize:"40px", marginTop:'70px'}}>Mayuri Foods Combos</div>
 
     <div className="row">
       {data.map((element)=> {
